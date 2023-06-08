@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cat index.html | grep "Hello
+cat index.html | grep "Hello"
