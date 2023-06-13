@@ -1,0 +1,8 @@
+name: "echo github.repository"
+on: push
+
+jobs:
+  try-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.repository }}"
