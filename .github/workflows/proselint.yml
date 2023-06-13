@@ -1,0 +1,11 @@
+name: "proselint all .md files"
+on: pull_request
+
+jobs:
+  Proselint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: pip install proselint
+      - run: ls
+      - run: proselint *.md
